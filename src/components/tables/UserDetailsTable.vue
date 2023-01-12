@@ -10,15 +10,13 @@
             </tr>
 
             <tr v-for="item in userDetails" :key="item.id">
-                <!-- <ng-container v-for="item in userDetails" :key="item.id"> -->
-                    <td>{{ item.id }}</td>
-                    <td>
-                        <img :src="item.avatar" alt="Vue logo">
-                    </td>
-                    <td>{{ item.first_name }}</td>
-                    <td>{{ item.last_name }}</td>
-                    <td>{{ item.email }}</td>
-                <!-- </ng-container> -->
+                <td>{{ item.id }}</td>
+                <td>
+                    <img :src="item.avatar" alt="Vue logo">
+                </td>
+                <td>{{ item.first_name }}</td>
+                <td>{{ item.last_name }}</td>
+                <td>{{ item.email }}</td>
             </tr>
         </table>
     </div>
